@@ -1,3 +1,10 @@
+"""
+--------------------
+many annotate_bubble
+--------------------
+
+"""
+
 import mpl_visual_context.patheffects as pe
 from mpl_speech_bubble import AnnotationBubble
 

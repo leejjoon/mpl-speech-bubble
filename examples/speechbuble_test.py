@@ -1,7 +1,11 @@
-import matplotlib.transforms as mtransforms
-# from mpl_speech_bubble import AnnotationMergedPatch, AnnotationBubble # , Bubble
-from mpl_speech_bubble import annotate_merged, annotate_bubble
+"""
+-----------------------------------
+annotate_merged and annotate_bubble
+-----------------------------------
 
+"""
+
+from mpl_speech_bubble import annotate_merged, annotate_bubble
 
 import matplotlib.pyplot as plt
 

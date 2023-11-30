@@ -1,3 +1,10 @@
+"""
+---------------
+annotate_bubble
+---------------
+
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
@@ -12,15 +19,14 @@ ax.add_patch(el)
 
 ann = annotate_bubble(ax, 'speech\nbubble',
                       xy=(4, 4), xycoords='data',
-                      xytext=(-10, -25), textcoords='offset points',
+                      loc="up",
                       size=20, color="w",
-                      ha="left", va="top",
+                      ha="left",
                       bbox=dict(boxstyle="round",
                                 fc="none", ec="w"),
-                      arrowprops=dict(arrowstyle="wedge,tail_width=2.",
+                      arrowprops=dict(arrowstyle="wedge,tail_width=1.5",
                                       patchA=None,
                                       patchB=el,
-                                      relpos=(0.5, 0.5),
                                       connectionstyle="arc3,rad=-0.1"))
 
 plt.show()
