@@ -8,4 +8,11 @@
 # See https://github.com/pypa/setuptools/issues/1724#issuecomment-627241822
 from ._version import __version__
 
-from .speech_bubble import annotate_bubble
+__all__ = ["AnnotationMergedPatch", "AnnotationBubble",
+           "annotate_bubble", "annotate_merged", "BubbleConnectionStyle"]
+
+from .speech_bubble import (AnnotationMergedPatch, AnnotationBubble,
+                            annotate_bubble, annotate_merged)
+
+from . import boxstyle # this will register fixed_circle and fixed_square as a boxstyle.
+from .connectionstyle  import Bubble as BubbleConnectionStyle
